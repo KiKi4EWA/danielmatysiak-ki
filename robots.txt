@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+Sitemap: https://ki.danielmatysiak.de/sitemap.xml
