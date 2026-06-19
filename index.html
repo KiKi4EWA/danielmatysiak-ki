@@ -399,20 +399,21 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
-      align-items: center;
+      align-items: start;
     }
 
     .hero-visual {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       cursor: pointer;
     }
 
     #hero-infographic {
       width: 100%;
-      height: auto;
+      max-height: 520px;
       object-fit: contain;
+      object-position: center top;
       mix-blend-mode: multiply;
       user-select: none;
       display: block;
@@ -2256,11 +2257,12 @@
 
   // Hero infographic – weighted random rotation
   const heroImages = [
-    { src: 'img/hero_ui.webp',         w: 15 },
-    { src: 'img/hero_zeitsparen.webp', w: 15 },
+    { src: 'img/hero_ui.webp',         w: 12 },
+    { src: 'img/hero_zeitsparen.webp', w: 12 },
     { src: 'img/hero_vierd.webp',      w: 40 },
-    { src: 'img/hero_prompt.webp',     w: 15 },
-    { src: 'img/hero_skills.webp',     w: 15 },
+    { src: 'img/hero_prompt.webp',     w: 12 },
+    { src: 'img/hero_skills.webp',     w: 12 },
+    { src: 'img/hero_versus.webp',     w: 12 },
   ];
 
   function pickHeroImg() {
