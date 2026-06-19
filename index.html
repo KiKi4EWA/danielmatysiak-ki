@@ -1012,9 +1012,7 @@
       padding: 1rem 1.4rem;
     }
     #form-success.shown {
-      display: flex;
-      align-items: baseline;
-      gap: 0.6rem;
+      display: block;
       animation: successReveal 380ms var(--ease-out) forwards;
     }
     @keyframes successReveal {
@@ -1022,15 +1020,9 @@
       to   { opacity: 1; transform: translateY(0); }
     }
     #form-success .success-title {
-      font-weight: 700;
+      font-weight: 600;
       color: var(--color-dark);
       font-size: 0.95rem;
-      white-space: nowrap;
-    }
-    #form-success .success-sub {
-      font-size: 0.9rem;
-      color: var(--color-dark);
-      opacity: 0.7;
     }
   </style>
 </head>
@@ -1537,8 +1529,7 @@
     </form>
 
     <div id="form-success">
-      <p class="success-title">Alles klar.</p>
-      <p class="success-sub">Melde mich meistens noch am selben oder nächsten Tag.</p>
+      <p class="success-title">Hab's. Du hörst bald von mir.</p>
     </div>
   </div>
 </section>
