@@ -1007,13 +1007,14 @@
       display: none;
       max-width: 680px;
       margin-top: 1.5rem;
-      background: var(--color-light);
+      background: var(--color-sage);
       border-radius: var(--radius-md);
-      padding: 1.5rem 2rem;
-      border-left: 4px solid var(--color-sage);
+      padding: 1rem 1.4rem;
     }
     #form-success.shown {
-      display: block;
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
       animation: successReveal 380ms var(--ease-out) forwards;
     }
     @keyframes successReveal {
@@ -1023,12 +1024,13 @@
     #form-success .success-title {
       font-weight: 700;
       color: var(--color-dark);
-      font-size: 1.05rem;
-      margin-bottom: 0.3rem;
+      font-size: 0.95rem;
+      white-space: nowrap;
     }
     #form-success .success-sub {
       font-size: 0.9rem;
-      color: #4a4a6a;
+      color: var(--color-dark);
+      opacity: 0.7;
     }
   </style>
 </head>
@@ -1535,8 +1537,8 @@
     </form>
 
     <div id="form-success">
-      <p class="success-title">Nachricht angekommen.</p>
-      <p class="success-sub">Ich melde mich in der Regel innerhalb von 24 Stunden.</p>
+      <p class="success-title">Alles klar.</p>
+      <p class="success-sub">Melde mich meistens noch am selben oder nächsten Tag.</p>
     </div>
   </div>
 </section>
@@ -2066,11 +2068,11 @@
       'erstgespraech-p': 'Kein Pitch. Kein Druck. Nur ein ehrliches Gespräch darüber, ob das Sinn macht.',
       'erstgespraech-cta': 'Termin auswählen',
       'booking-hint': 'Öffnet Calendly in einem neuen Tab · kostenlos · unverbindlich',
-      'nav-pakete': 'Was kostet das?',
-      'nav-ablauf': 'Wie läuft das?',
-      'nav-ueber': 'Wer bin ich?',
-      'nav-kontakt': 'Schreiben',
-      'nav-cta': 'Kostenloses Gespräch',
+      'nav-pakete': 'Angebot',
+      'nav-ablauf': 'Ablauf',
+      'nav-ueber': 'Über mich',
+      'nav-kontakt': 'Kontakt',
+      'nav-cta': 'Erstgespräch buchen',
       'hero-cta2': 'Was ich anbiete',
       'erg-label': 'Was danach anders ist',
       'erg-h2': 'Konkrete Veränderungen, kein Versprechen.',
